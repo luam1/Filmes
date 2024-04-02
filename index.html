@@ -1,98 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluguel de Filmes</title>
-    <style>
-        /* Estilos CSS podem ser adicionados aqui */
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+            background {
+            background-image: url('https://www.designi.com.br/images/preview/10321399.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 300px; 
+            width: 100%; 
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Aluguel de Filmes</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Página Inicial</a></li>
-                <li><a href="#catalogo">Catálogo de Filmes</a></li>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#suporte">Suporte</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Bem-vindo ao Aluguel de Filmes!</h2>
-            <p>Confira nossos destaques:</p>
-            <ul>
-                <li>Filme 1</li>
-                <li>Filme 2</li>
-                <li>Filme 3</li>
-            </ul>
-        </section>
-        
-        <section id="catalogo">
-            <h2>Catálogo de Filmes</h2>
-            <ul>
-                <li><a href="#filme1">Filme 1</a></li>
-                <li><a href="#filme2">Filme 2</a></li>
-                <li><a href="#filme3">Filme 3</a></li>
-            </ul>
-        </section>
-        
-        <section id="perfil">
-            <h2>Perfil do Usuário</h2>
-            <p>Histórico de aluguéis:</p>
-            <ul>
-                <li>Filme alugado em [data]</li>
-                <li>Filme alugado em [data]</li>
-                <li>Filme alugado em [data]</li>
-            </ul>
-        </section>
-        
-        <section id="suporte">
-            <h2>Suporte</h2>
-            <p>Entre em contato conosco:</p>
-            <form action="#">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-        
-        <section id="filme1">
-            <h2>Filme 1</h2>
-            <p>Detalhes do Filme 1.</p>
-            <button onclick="alugarFilme('Filme 1')">Alugar</button>
-        </section>
-        
-        <section id="filme2">
-            <h2>Filme 2</h2>
-            <p>Detalhes do Filme 2.</p>
-            <button onclick="alugarFilme('Filme 2')">Alugar</button>
-        </section>
-        
-        <section id="filme3">
-            <h2>Filme 3</h2>
-            <p>Detalhes do Filme 3.</p>
-            <button onclick="alugarFilme('Filme 3')">Alugar</button>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Aluguel de Filmes</p>
-    </footer>
-
-    <script>
-        function alugarFilme(filme) {
-            alert("Você alugou o filme: " + filme);
-            // Aqui você pode adicionar a lógica para processar o aluguel do filme
-        }
-    </script>
+    
 </body>
 </html>
