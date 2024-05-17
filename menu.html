@@ -73,9 +73,32 @@
         <img src="https://img.myloview.com.br/quadros/icone-de-pesquisa-lupa-em-fundo-escuro-700-121180308.jpg" id="btnBusca" alt="Buscar" height="20" width="20"/>
         </div>
     </nav>
-    <section>
+<section>
         
-    </section>
+<section id="formulario">
+    <h2>Formulário de Contato</h2>
+    <form action="/submit-form" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <label><input type="radio" name="contato" value="email"> Email</label><br>
+            <label><input type="radio" name="contato" value="telefone"> Telefone</label><br>
+            <label><input type="checkbox" name="novidades" value="sim"> Quero receber novidades</label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+</section>
     <footer>
         <div class="conteiner">
            <div class="button"> 
