@@ -6,7 +6,7 @@
     <title>Meu Site</title>
     <style>
         body {
-            background-color:#000000;
+            background-color: #000000;
             background-size: cover; 
             background-position: center; 
             height: 800px; 
@@ -26,7 +26,7 @@
             padding: 5px;
             text-align: center;
         }
-        
+
         section {
             padding: 20px;
         }
@@ -65,27 +65,46 @@
 </head>
 <body>
     <header>
-        
-    </header>
-    <nav>
-        <div id="divBusca">
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
-        <img src="https://img.myloview.com.br/quadros/icone-de-pesquisa-lupa-em-fundo-escuro-700-121180308.jpg" id="btnBusca" alt="Buscar" height="20" width="20"/>
-        </div>
-    </nav>
-    <section>
-        
-    </section>
-    <footer>
         <div class="conteiner">
            <div class="button"> 
-                   <button onclick="window.location.href='menu.html'"><img src="menu.jpg" height="50" width="150"></button> 
-                   <button onclick="window.location.href='confg.html'"><img src="confg.jpg" height="50" width="150"></button>
-                   <button onclick="window.location.href='busca.html'"><img src="busca.jpg" height="50" width="150"></button>
-                   <button onclick="window.location.href='historico.html'"><img src="historico.jpg" alt="" height="50" width="150"></button>
+                   <a onclick="window.location.href='menu.html'"><img src="https://us.123rf.com/450wm/lililia/lililia1711/lililia171100498/90663989-vector-flat-icon-of-the-menu-on-black-background.jpg?ver=6" height="50" width="150"></a> 
+                   <a onclick="window.location.href='confg.html'"><img src="https://static.vecteezy.com/ti/vetor-gratis/p1/18965506-eps10-icone-abstrato-de-botao-de-compartilhamento-de-branco-ou-logotipo-isolado-em-fundo-preto-simbolo-de-compartilhamento-em-um-estilo-moderno-simples-e-moderno-para-o-design-do-seu-site-e-aplicativo-movel-vetor.jpg" height="50" width="150"></a>
+                   <a onclick="window.location.href='busca.html'"><img src="https://cdn.pixabay.com/photo/2023/04/03/21/31/star-7897931_1280.png" height="50" width="150"></a>
+                   <a onclick="window.location.href='historico.html'"><img src="https://i.pinimg.com/736x/e4/aa/ea/e4aaeaa23844ea0f489b1237b9bb1352.jpg" alt="" height="50" width="150"></a>
            </div>
        </div>
-            
+    </header>
+    <nav>
+
+    </nav>
+<section>
+
+<section id="formulario">
+    <form action="/submit-form" method="post">
+        <label for="nome"><font color="#ffffff">Nome:</font><font color="#000000">....</font></label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email"><font color="#ffffff">Email:</font><font color="#000000">.....</font></label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensagem"><font color="#ffffff">Mensagem:</font></label>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+        <font color="#
+ffffff"><fieldset>
+            <legend>Preferências</legend>
+            <label><input type="radio" name="contato" value="email"> Email</label><br>
+            <label><input type="radio" name="contato" value="telefone"> Telefone</label><br>
+            <label><input type="checkbox" name="novidades" value="sim"> Quero receber novidades</label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar"></font>
+    </form>
+</section>
+
+</section>
+    <footer>
+
     </footer>
 </body>
 </html>
