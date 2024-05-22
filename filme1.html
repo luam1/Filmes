@@ -1,81 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Locação de Filmes</title>
     <style>
         body {
-            background-color: #000000;
-            background-size: cover; 
-            background-position: center; 
-            height: 800px; 
-            width: 100%;
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: #000000;
-            color: #fff;
-            padding: 5px;
-            text-align: center;
-        }
-        nav {
-            background-color: #000000;
-            padding: 5px;
-            text-align: center;
-        }
-
-        section {
+        .container {
             padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333;
+            border-radius: 8px;
         }
-        footer {
-            background-color: #000000;
-            color: #aa0000;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button.rent {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.favorite {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.stream {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.report {
+            background-color: #ff0000;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
+        <div class="title"></div>
+        <div class="details">
+            <p><strong>Diretor:</strong></p>
+            <p><strong>Ano:</strong></p>
+            <p><strong>Gênero:</strong></p>
+            <p><strong>Sinopse:</strong></p>
+        </div>
+        <div class="buttons">
+            <button class="rent" onclick="rentMovie()">Alugar Filme</button>
+            <button class="favorite" onclick="markFavorite()">Marcar como Favorito</button>
+            <button class="stream" onclick="streamMovie()">Transmitir</button>
+            <button class="report" onclick="reportMovie()">Denunciar</button>
+        </div>
+    </div>
 
-    </header>
-    <nav>
- 
-    </nav>
-<section>
+    <script>
+        function rentMovie() {
+            alert("Filme alugado com sucesso!");
+        }
 
-<section id="formulario">
-    <h2>Formulário de Contato</h2>
-    <form action="/submit-form" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
+        function markFavorite() {
+            alert("Filme marcado como favorito!");
+        }
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        function streamMovie() {
+            alert("Iniciando transmissão do filme!");
+        }
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem"></textarea><br><br>
-
-        <fieldset>
-            <legend>Preferências</legend>
-            <label><input type="radio" name="contato" value="email"> Email</label><br>
-            <label><input type="radio" name="contato" value="telefone"> Telefone</label><br>
-            <label><input type="checkbox" name="novidades" value="sim"> Quero receber novidades</label><br>
-        </fieldset>
-
-        <input type="submit" value="Enviar">
-    </form>
-</section>
-
-</section>
-    <footer>
- 
-    </footer>
+        function reportMovie() {
+            alert("Filme denunciado!");
+        }
+    </script>
 </body>
 </html>
